@@ -1,0 +1,209 @@
+.logo{
+	display: block;
+	margin: 0 auto;
+}
+
+.home{
+	text-align: center;
+}
+
+.home i{
+	color: @link-color;
+	font-size: 48px;
+	line-height: 10px;
+	margin-top: 40px;
+}
+
+.case{
+	float: left;
+	margin: 0 35px 40px 0;
+}
+
+.case .btn-block .inner{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    line-height: 250px;
+    width: 250px;
+    height: 250px;
+    .transition(all, 0.2s);
+}
+
+.case .btn-block .inner:hover{
+	opacity: 0.8;
+}
+
+.case p{
+	margin-top: 10px;
+	color: @link-color;
+}
+
+.project .case p{
+	color: @orange;
+}
+
+.case p i{
+	padding: 0 15px 0 5px;
+	font-size: 16px;
+}
+
+.dashboard{
+	margin: 0 20px;
+}
+
+.dashboard h2{
+	.ellipsis();
+	width: 250px;
+	height: 20px;
+}
+
+.upload{
+	text-align: center;
+}
+
+.upload .zone{
+	border: 1px dashed @link-color;
+	.rounded-corners(10px);
+	width: 60%;
+	display: block;
+	margin: -25px auto 0 auto;
+	padding: 40px;
+	.noselection();
+	cursor: default;
+}
+
+.upload p{
+	font-size: 24px;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+.empty{
+	height: 40px;
+}
+
+.head, .option{
+	height: 50px;
+	display: block;
+}
+
+.head .pull-left, .head .pull-right{
+	width: 50%;
+}
+
+.head .pull-right{
+	margin-top: 17px;
+}
+
+.head h1{
+	.ellipsis();
+	width: 100%;
+	font-size: 24px;
+	margin: 0;
+	padding-top: 11px;
+}
+
+.head a{
+	display: inline-block;
+	float: right;
+	text-align: right;
+	margin-left: 30px;
+}
+
+.head a i{
+	padding-right: 5px;
+}
+
+.image{
+	display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    line-height: 500px;
+    height: 500px;
+    background-color: #DFDFDF;
+    border: 1px solid @link-color;
+    .transition(all, 0.2s);
+}
+
+.option .pull-left a i{
+	padding-right: 5px;
+}
+
+.option .pull-left a{
+	margin-right: 40px;
+	margin-top: 16px;
+	display: inline-block;
+}
+
+.zoom{
+	border: 1px solid @link-color;
+	border-top: none;
+}
+
+.zoom a, .zoom .zoom-size{
+	display: block;
+	float: left;
+	height: 50px;
+	width: 60px;
+	text-align: center;
+	padding-top: 16px;
+	.transition(all, 0.1s);
+}
+
+.zoom a:hover{
+	color: @background-color;
+	background-color: @link-color;
+	text-decoration: none;
+}
+
+.zoom a:active{
+	color: @background-color;
+	background-color: @link-color-active;
+	text-decoration: none;
+}
+
+.zoom .zoom-size{
+	display: block;
+	float: left;
+	background-color: #DFDFDF;
+}
+
+.description{
+	width: 50%;
+	background-color: @link-color;
+	color: @background-color;
+	line-height: 18px;
+}
+
+.description .inner, .information .inner{
+	padding: 30px 20px;
+}
+
+.information{
+	color: @background-color;
+	background-color: @text-color;
+	width: 50%;
+	line-height: 18px;
+}
+
+.information ul{
+	border-radius: none;
+	list-style: none;
+}
+
+.share .inner{
+	color: @background-color;
+	background-color: @link-color;
+	padding: 11px 20px 1px 20px;
+	margin-bottom: 10px;
+}
+
+.information li:before {
+  content: '\f054';
+  font-size: 12px;
+  font-family: 'FontAwesome';
+  display: inline-block;
+  margin-left: 0px; 
+  width: 15px;
+}​

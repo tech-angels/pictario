@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+	.case{
+		float: none;
+		margin: 0 auto 40px auto;
+		display: block;
+		text-align: center;
+	}
+
+	.case .btn-block .inner{
+		width: 248px;
+		height: 248px;
+	}
+
+	.btn.btn-block i{
+		margin-top: 70px;
+	}
+
+	.btn.btn-block, .project .btn.btn-block{
+		margin: 0 auto;
+		display: block;
+	}
+
+	.navbar{
+		text-align: center;
+	}
+
+	.navbar li a{
+		display: inline-block;
+		width: 100%;
+		border: 1px solid @text-color;
+		color: @link-color;
+		padding: 5px 15px;
+		text-decoration: none;
+		margin-bottom: 10px;
+		.transition(all, 0.2s);
+	}
+
+	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+		color: @background-color;
+		background-color: @text-color;
+		text-decoration: none;
+	}
+
+	.navbar-default .navbar-nav>li>a:active{
+		background-color: @text-color-active;
+	}
+
+	.navbar .btn.btn-default{
+		display: inline-block;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	footer span{
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	footer a{
+		display: inline-block;
+		width: 100%;
+		border: 1px solid @text-color;
+		padding: 5px 15px;
+		text-decoration: none;
+		margin-bottom: 10px;
+		.transition(all, 0.2s);
+	}
+
+	footer a{
+		border: 1px solid @link-color;
+		.rounded-corners(10px);
+	}
+
+	footer a:hover,{
+		background-color: @link-color;
+		color: @background-color;
+		text-decoration: none;
+	}
+
+	footer a:active{
+		background-color: @link-color-hover;
+		border-color: @link-color-hover;
+		background-image: none;
+		box-shadow: none;
+		color: @background-color;
+	}
+
+	.home .col-md-4{
+		padding: 0;
+	}
+}

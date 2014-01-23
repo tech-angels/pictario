@@ -1,0 +1,165 @@
+/***** Variables *******/
+
+@font-size-base: 14px;
+@line-height-base: 16px;
+@font-family-base: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+@background-color: #F4F4F4;
+
+@grey : #DDDDDD;
+
+@orange: #FFBB3D;
+@orange-hover: @orange + #111;
+@orange-active: @orange + #222;
+
+
+@text-color: #555555;
+@text-color-hover: @text-color + #111;
+@text-color-active: @text-color + #222;
+
+@cancel-color: #B7B7B7;
+@cancel-color-hover: @cancel-color + #111;
+@cancel-color-active: @cancel-color + #222;
+
+@link-color: #0055BB;
+@link-color-hover: #0055BB + #111;
+@link-color-active: @link-color + #111;
+
+
+/***** classes *******/
+
+.rounded-corners(@rounded){
+	-webkit-border-radius: @rounded;
+	-moz-border-radius: @rounded;
+	-o-border-radius: @rounded;
+	border-radius: @rounded;
+}
+
+.transition(@object, @time){
+	-webkit-transition: @object @time linear;
+	-moz-transition: @object @time linear;
+	-o-transition: @object @time linear;
+	transition: @object @time linear;
+}
+
+.transform(@time){
+	-webkit-transition: -webkit-transform @time linear;
+	-moz-transition: -moz-transform @time linear;
+	-o-transition: -o-transform @time linear;
+	transition: transform @time linear;
+}
+
+.scale(@size){
+	-webkit-transform: scale(@size);
+	-moz-transform: scale(@size);
+	-o-transform: scale(@size);
+	transform: scale(@size);
+}
+
+.bold{
+	font-weight: 600;
+}
+
+.opacity(@value){
+	-webkit-opacity: @value;
+	-moz-opacity: @value;
+	-o-opacity: @value;
+	opacity: @value;
+}
+
+.ellipsis{
+	-webkit-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.noselection{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/***** Bases *******/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body{
+	height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @background-color;
+  font-weight: 300;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -60px;
+	padding: 0 0 60px;
+}
+
+#main{
+	margin: 30px auto 100px auto;
+}
+
+h1{
+	font-weight: 300;
+	color: @link-color;
+	margin-bottom: 30px;
+}
+
+.home h1{
+	color: @text-color;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+h2{
+	font-size: 14px;
+	font-weight: 300;
+	color: @link-color;
+}
+
+.home h2{
+	font-size: 16px;
+	font-weight: 300;
+	color: @text-color;
+}
+
+h3{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: @link-color;
+	font-weight: 300;
+}
+
+h5{
+	font-size: 14px;
+	font-weight: 300;
+	color: @link-color;
+}
+
+
+
+
+

@@ -1,0 +1,127 @@
+.navbar{
+	text-transform: uppercase;
+	padding: 0 20px;
+	margin: 0;
+	border: 0;
+	background-color: @background-color;
+}
+
+.navbar-brand{
+	margin: 0;
+	padding: 5px 0;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+	text-decoration: underline;
+}
+
+.navbar .btn.btn-default{
+	margin-top: 9px;
+}
+
+.navbar-toggle{
+	margin-right: 0;
+}
+
+.navbread{
+	background-color: @link-color;
+	border: 0;
+	width: 100%;
+}
+
+.navbread a.btn{
+	margin: 12px 20px 0 0;
+	border-color: @orange;
+	color: @orange;
+}
+
+.navbread a.btn:hover{
+	color: @text-color;
+	background-color: @orange;
+}
+
+.navbread a.btn:active{
+	color: @text-color;
+	border: 1px solid @orange-active;
+	background-color: @orange-active;
+}
+
+.breadcrumb{
+	background-color: transparent;
+	margin: 0;
+	padding: 20px 20px;
+}
+
+.breadcrumb li a{
+	color: @orange;
+	.transition(all, 0.2s);
+}
+
+.breadcrumb li a:hover{
+	color: @orange;
+}
+
+.breadcrumb li a:active{
+	color: @link-color-active;
+}
+
+.breadcrumb li.active{
+	color: @background-color;
+}
+
+.avatar{
+	text-align: center;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	color: @background-color;
+	background-color: @link-color;
+	.rounded-corners(20px);
+	margin-right: 5px;
+}
+
+.avatar span{
+	display: inline-block;
+	padding-top: 5px;
+}
+
+.avatar span.gravatar{
+	padding: 0;
+}
+
+.avatar span.gravatar img{
+	.rounded-corners(30px);
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+header .caret{
+	margin-left: 8px;
+	border-top: 5px solid;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	margin-top: -4px;
+}
+
+header .navbar-nav>li.dropdown>a{
+	padding: 0;
+	padding-top: 10px;
+}
+
+.dropdown-menu > li > a{
+	font-weight: 300;
+}
+
+ul.dropdown-menu{
+	margin-top: 60px;
+}
+
+.navbar-nav > li > .dropdown-menu{
+	margin-top: -1px;
+}
+
+header a.dropdown-toggle{
+	height: 50px;
+}

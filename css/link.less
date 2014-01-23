@@ -1,0 +1,157 @@
+a{
+	color: @link-color;
+	.transition(all, O.2s);
+}
+
+a:hover{
+	color: @link-color-hover;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:active{
+	color: @link-color-active;
+	text-decoration: none;
+}
+
+.arrow{
+	color: @orange;
+	padding-left: 40px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 18px;
+}
+
+.arrow:hover{
+	color: @orange-hover;
+	text-decoration: underline;
+}
+
+.arrow:active{
+	color: @orange-active;
+	text-decoration: none;
+}
+
+.arrow:last-child{
+	margin-right: 20px;
+}
+
+.arrow i{
+	font-size: 16px;
+}
+
+.arrow.left i{
+	padding-right: 7px;
+}
+
+.arrow.right i{
+	padding-left: 7px;
+}
+
+
+.btn{
+	.transition(all, 0.1s);
+	.rounded-corners(10px);
+}
+
+.btn.btn-default, .navbar .btn.btn-default{
+	border: 1px solid @link-color;
+	background-color: transparent;
+	background-image: none;
+	text-transform: uppercase;
+	color: @link-color;
+	padding: 5px 15px;
+	text-decoration: none;
+}
+
+.btn.btn-default:hover, .navbar .btn.btn-default:hover{
+	background-color: @link-color;
+	color: @background-color;
+}
+
+.btn.btn-default:active, .navbar .btn.btn-default:active{
+	background-color: @link-color-hover;
+	border-color: @link-color-hover;
+	background-image: none;
+	box-shadow: none;
+	color: @background-color;
+}
+
+.btn.btn-large{
+	font-size: 18px;
+	font-weight: 300;
+	padding: 10px 40px;
+	margin-right: 10px;
+}
+
+.btn.cancel{
+	border-color: @cancel-color;
+	color: @cancel-color;
+}
+
+.btn.cancel:hover{
+	background-color: @cancel-color;
+	color: @background-color;
+}
+
+.btn.cancel:active{
+	background-color: @cancel-color-active;
+	border-color: @cancel-color-active;
+	color: @background-color;
+}
+
+.btn.btn-block{
+	.rounded-corners(0);
+	padding: 0;
+	width: 250px;
+	height: 250px;
+	border: 1px solid @link-color;
+	color: @link-color;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 300;
+	box-shadow: none;
+	display: table-cell;
+	.transition(all, 0.2s);
+}
+
+.btn.btn-block:hover{
+	background-color: @link-color;
+	color: @background-color;
+}
+
+.btn.btn-block:active{
+	background-color: @link-color-hover;
+	color: @background-color;
+}
+
+.btn.btn-block i{
+	font-size: 48px;
+	margin-top: 0px;
+}
+
+.project .btn.btn-block i{
+	margin-top: 72px;
+}
+
+.project .btn.btn-block{
+	color: @orange;
+	border-color: @orange;
+	padding: 10px;
+	.ellipsis();
+}
+
+.project .btn.btn-block:hover{
+	color: @background-color;
+	border-color: @orange;
+	background-color: @orange;
+}
+
+.project .btn.btn-block:active{
+	border-color: @orange-active;
+	background-color: @orange-active;
+}
+
+.share a{
+	color: @orange;
+}
